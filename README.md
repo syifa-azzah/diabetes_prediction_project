@@ -31,7 +31,7 @@ The original source code was adapted from a Kaggle notebook and reorganized into
 
 ## Project Structure
 
-```plaintext id="k4s4tv"
+```plaintext id="jlwmb2"
 diabetes_prediction_project/
 │
 ├── main.py
@@ -79,13 +79,13 @@ The dataset contains medical diagnostic measurements used to predict diabetes oc
 
 Install required libraries:
 
-```bash id="jlwm59"
+```bash id="jlwmb3"
 python -m pip install -r requirements.txt
 ```
 
 Run the project:
 
-```bash id="t9jjlwm"
+```bash id="jlwmb4"
 python main.py
 ```
 
@@ -95,7 +95,7 @@ python main.py
 
 The project compares several machine learning algorithms based on training and testing accuracy.
 
-Logistic Regression achieved the best balance between training and testing performance.
+Among the evaluated models, Logistic Regression achieved the best balance between training and testing performance.
 
 ---
 
