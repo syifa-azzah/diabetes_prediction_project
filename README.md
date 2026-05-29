@@ -2,26 +2,179 @@
 
 ## Project Overview
 
-This project predicts diabetes using machine learning algorithms based on medical diagnostic data.
+This project predicts whether a patient is likely to have diabetes using machine learning algorithms. The project was adapted from a Kaggle notebook and reorganized into a modular Python project structure following software engineering principles.
 
-The original source code was adapted from a Kaggle notebook and reorganized into a modular Python project structure for better readability, maintainability, and software engineering practice.
+The project performs data loading, preprocessing, visualization, model training, evaluation, and testing.
 
 ---
 
-## How to Run
+## Features
 
-Run the project:
+* Data loading from CSV dataset
+* Data preprocessing and cleaning
+* Missing value handling
+* Feature scaling
+* Data visualization
+* Machine learning model training
+* Model evaluation
+* Unit testing
+* GitHub Codespaces support
 
-```bash id="jlwmb4"
+---
+
+## Dataset
+
+The dataset contains medical diagnostic measurements used to predict diabetes occurrence in patients.
+
+Attributes include:
+
+* Pregnancies
+* Glucose
+* Blood Pressure
+* Skin Thickness
+* Insulin
+* BMI
+* Diabetes Pedigree Function
+* Age
+* Outcome
+
+---
+
+## Project Structure
+
+```plaintext
+diabetes_prediction_project/
+│
+├── main.py
+├── config.py
+├── README.md
+├── requirements.txt
+│
+├── data/
+│   ├── diabetes.csv
+│   ├── data_loader.py
+│   └── __init__.py
+│
+├── preprocessing/
+│   ├── preprocessing.py
+│   └── __init__.py
+│
+├── models/
+│   ├── model_training.py
+│   └── __init__.py
+│
+├── evaluation/
+│   ├── evaluation.py
+│   └── __init__.py
+│
+├── visualization/
+│   ├── visualization.py
+│   └── __init__.py
+│
+├── tests/
+│   ├── test_model.py
+│   └── __init__.py
+│
+├── utils/
+│   └── __init__.py
+│
+└── .devcontainer/
+    └── devcontainer.json
+```
+
+---
+
+## Setup Instructions
+
+### Clone Repository
+
+```bash
+git clone https://github.com/syifa-azzah/diabetes_prediction_project.git
+```
+
+### Navigate to Project Folder
+
+```bash
+cd diabetes_prediction_project
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Usage Guide
+
+Run the complete project:
+
+```bash
 python main.py
 ```
+
+The system will:
+
+1. Load the dataset
+2. Clean and preprocess data
+3. Generate visualizations
+4. Split training and testing data
+5. Scale features
+6. Train machine learning models
+7. Evaluate model performance
+
+---
+
+## Testing
+
+Run unit tests:
+
+```bash
+python -m tests.test_model
+```
+
+The tests verify:
+
+* Dataset loading
+* Data preprocessing
+* Model initialization
+
+---
+
+## Machine Learning Models
+
+* Logistic Regression
+* Decision Tree
+* Random Forest
+* Support Vector Machine (SVM)
 
 ---
 
 ## Results
 
-The project compares several machine learning algorithms based on training and testing accuracy.
+| Model               | Train Accuracy | Test Accuracy |
+| ------------------- | -------------- | ------------- |
+| Logistic Regression | 77.04%         | 75.32%        |
+| Decision Tree       | 100.00%        | 71.43%        |
+| Random Forest       | 100.00%        | 73.38%        |
+| SVM                 | 82.90%         | 74.68%        |
 
-Among the evaluated models, Logistic Regression achieved the best balance between training and testing performance.
+Logistic Regression achieved the best balance between training and testing performance.
 
+---
 
+## GitHub Codespaces
+
+The project includes a `.devcontainer` configuration and can be executed directly in GitHub Codespaces.
+
+---
+
+## Author
+
+Nur Syifa Azzah Binti Muhd Farouk (BS23110194) 
+
+Computer Programming SF35803 2025/2026 
+
+GitHub:
+https://github.com/syifa-azzah
