@@ -1,3 +1,8 @@
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from data.data_loader import load_data
 from preprocessing.preprocessing import clean_data
 from models.model_training import get_models
