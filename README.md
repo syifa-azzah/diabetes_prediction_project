@@ -128,17 +128,36 @@ The system will:
 
 ## Testing
 
-Run unit tests:
+The project includes unit tests to verify the reliability and correctness of key components.
+
+### Test Files
+
+* `test_data_loader.py` – verifies dataset loading functionality.
+* `test_preprocessing.py` – verifies data cleaning and preprocessing operations.
+* `test_model_training.py` – verifies machine learning model initialization and training functionality.
+* `test_evaluation.py` – verifies evaluation metrics and model performance calculations.
+
+### Running Tests
+
+Run individual tests using:
 
 ```bash
-python -m tests.test_model
+python -m tests.test_data_loader
 ```
 
-The tests verify:
+```bash
+python -m tests.test_preprocessing
+```
 
-* Dataset loading
-* Data preprocessing
-* Model initialization
+```bash
+python -m tests.test_model_training
+```
+
+```bash
+python -m tests.test_evaluation
+```
+
+Successful execution of these tests confirms that the main project components function correctly and produce expected results.
 
 ---
 
