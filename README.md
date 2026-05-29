@@ -25,4 +25,3 @@ The project compares several machine learning algorithms based on training and t
 Among the evaluated models, Logistic Regression achieved the best balance between training and testing performance.
 
 
-Industrial Physics Programme Coursework Project
